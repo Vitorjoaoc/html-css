@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes
+        ou simplismente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotoP.png"
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.png"
+        type="image/png"> 
+        <img src="imagens/fotoG.png" alt="Imagem felxivel">
+    </picture>
+    <h1>Reprozundo audios</h1>
+    <p>Vamos aprender a reproduzir audios no HTML5.</p>
+    <audio src="media/Sailing - Telecasted.mp3" controls autoplay></audio>
+    <p>Ou pedemos fazer dessa forma se tivermos com compatibilidade com o navegador.</p>
+    <audio>
+        <source src="media/Sailing - Telecasted.mp3" type="audio/mpeg">
+        <source src="media/Sailing - Telecasted.ogg" type="audio/ogg">
+        <source src="media/Sailing - Telecasted.wav" type="audio/wav">
+        <!--Assim ele tenta reproduzir no formato de cima e se nao der vai tentando nos debaixo -->
+    </audio>
+    <p>Infelizmente seu navageador não consegue reproduzir audio.
+        Clique <a href="media/Sailing - Telecasted.mp3">aqui</a> para baixar o audio.
+    </p> 
+</body>
+</html>
